@@ -1,0 +1,367 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+body{
+    background-color: black;
+    color: white;
+    margin: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+/* Navigation Section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+}
+li{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+nav button{
+    width: 70px;
+    height: 30px;
+    border: 1px solid rgb(81, 80, 80);
+    background-color: rgb(81, 80, 80);
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(187, 187, 187);
+}
+nav button:hover{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 1s;
+    width: 73px;
+    height: 32px;
+}
+nav a:hover{
+    text-decoration: underline;
+    
+}
+nav img:hover{
+    width: 33px;
+}
+/* Main Heading */
+.mainHeadlingSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+@media(max-width:768px){
+   .mainHeadlingSection{
+     display: flex;
+     flex-direction: column;
+   }
+    
+}
+.mainleftSection{
+    position: relative;
+    bottom: 100px;
+}
+.mainRightSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.mainRightSection img[alt="ImageMainHeading" ]{
+    margin-left: 50px;
+}
+.mainRightSection h1{
+    font-size: 60px;
+    padding-bottom: 20px;
+
+}
+.mainRightSection h3{
+    font-weight: 600;
+}
+.addToBag{
+    display: flex;
+    width: 230px;
+    height: 40px;
+    gap: 20px;
+    align-items: center;
+    border: 2px solid rgb(30, 30, 33);
+    justify-content: center;
+    background-color: rgb(30, 30, 33);
+    border-radius: 10px;
+}
+.addToBag:hover{
+    background-color: rgb(74, 74, 82);
+    transition: 1s;
+    cursor: pointer;
+}
+/* Media Section */
+.MediaSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.MediaSection ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+.MediaSection li{
+    list-style: none;
+    cursor: pointer;
+}
+/* Spaces Section */
+.SpeceSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.speceSectionList{
+    display: flex;
+    gap: 40px;
+}
+.spaceHeading{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.bluetooth{
+    position: relative;
+    left: 20px;
+}
+.microphone{
+    position: relative;
+    left: 20px;
+}
+.battery{
+    position: relative;
+    right: 20px;
+}
+.load{
+    position: relative;
+    right: 20px;
+}
+/* Case Section */
+.caseSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.caseSectionList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.caseRightSection{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.caseInfoBtn{
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    gap: 30px;
+    border: 2px solid rgb(30, 30, 33) ;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(30, 30, 33);
+    cursor: pointer;
+}
+.caseInfoBtn:hover{
+    background-color: rgb(89, 89, 98);
+    transition: 1s;
+}
+/* Product Section */
+.extraProductSection{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     gap: 40px;
+     border: 1px solid black;
+     background-color:rgb(30, 30, 33) ;
+    margin: 0 70px ;
+     margin-top: 40px;
+     padding: 20px;
+    
+     border-radius: 10px;
+     
+}
+.eProLeftSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.eProLeftSection p{
+    color: rgb(181, 180, 180);
+}
+.buyBtn{
+    display: flex;
+    gap: 30px;
+    background-color: rgb(6, 6, 6);
+    cursor: pointer;
+    border: 2px solid rgb(9, 9, 9) ;
+    border-radius: 10px;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+    
+}
+.buyBtn:hover{
+    background-color: rgb(89, 89, 98);
+    transition: 1s;
+}
+/* Product style Section */
+.styleSection{
+    margin-top: 30px;
+     display: flex; 
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+
+}
+
+
+.styleSectionList{
+ 
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin: 0px 30px;
+    justify-content: center;
+    align-items: center;
+}
+.listStyle{
+    border: 2px solid rgb(9, 9, 9);
+    background-color: rgb(30, 30, 30);
+    width: 250px;
+    height: 250px;
+    
+    
+
+}
+.styleListBtn{
+    position:relative;
+    top: 200px;
+   
+    display:  flex ;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img[alt="ImageM"]{
+    position: relative;
+    top: 150px;
+    width: 180px;
+}
+/* Footer Section */
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 20px;
+}
+.productSupport{
+    display: flex;
+    gap: 50px;
+    
+}
+.productSupport ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+.email{
+    background-color:rgb(30, 30, 30) ;
+    border-radius: 10px;
+    width: 450px;
+    height: 60px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+     
+}
+.email input{
+    width: 230px;
+    height: 35px;
+    padding: 3px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+.subscribeBtn{
+    display: flex;
+    gap: 10px;
+    background-color: black;
+    cursor: pointer;
+   
+}
+.subscribeBtn button{
+    width:160px;
+     height: 40px;
+    border-radius: 10px;
+    background-color: red;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+.subscribeBtn button:hover{
+    cursor: pointer;
+    background-color: green;
+    color: red;
+    font-weight: 700;
+
+}
+.socialMedia{
+    display: flex;
+    gap: 60px;
+
+
+}
+
+
+
