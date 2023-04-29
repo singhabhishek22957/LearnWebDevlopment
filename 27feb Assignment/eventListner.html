@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listener</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body id="bodyy">
+    <button onclick="onclicks()" id="onclicks">OnClick</button>
+    <button ondblclick="douclick()" id="douclick">DoubleClick</button>
+    <button onmouseover="mouseover()" id="mouse">Mouseover</button>
+    <button onkeypress="keypress()" id="keypress">onkeypress</button>
+    <button onkeydown="keydown()" id="keydown">keydown-keyup</button>
+    <button onmouseout="mouseout()" id="mouse-out">Mouse out</button>
+    <script >
+
+      const Body=document.getElementById('bodyy')
+      // Body.style.backgroundColor='green'
+
+      const onclicks=()=>{
+          Body.style.backgroundColor='red'
+
+      }
+
+      const douclick=()=>{
+          Body.style.backgroundColor='black'
+
+      }
+
+      const mouseover=()=>{
+          Body.style.backgroundColor='green'
+
+      }
+
+      const mouseout=()=>{
+          Body.style.backgroundColor='yellow'
+
+      }
+
+      const keypress=()=>{
+          Body.style.backgroundColor='blue'
+
+      }
+
+      const keydown=()=>{
+          Body.style.backgroundColor='white'
+
+      }
+    </script>
+  </body>
+</html>

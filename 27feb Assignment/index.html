@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      section {
+        border: 2px solid black;
+        min-width: 400px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 20px;
+      }
+      .mid {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      span {
+        min-width: 40px;
+        min-height: 30px;
+        border: 2px solid black;
+        font-size: 18px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        padding: 3px;
+      }
+      button {
+        height: 33px;
+        padding: 0 10px;
+        font-size: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Counter App</h1>
+      <div class="mid">
+        <div><button  id="decr">Decrement by 1</button></div>
+        <div><span id="result">0</span></div>
+        <div><button onclick="inc()" id="incr">Increment by 1</button></div>
+      </div>
+      <button id="reset">Reset Button</button>
+    </section>
+
+    <script>
+      decrBtn = document.getElementById("decr");
+      incrBtn = document.getElementById("incr");
+      Result = document.getElementById("result");
+      resetBtn = document.getElementById("reset"); 
+      
+      if (Number(Result.innerText) > 0) {
+        Result.style.backgroundColor = "white";
+        Result.style.color = "black";
+      }
+
+      const inc = () => {
+        let hello = Number(Result.innerText);
+        hello = hello + 1;
+        Result.innerText = hello;
+        if (hello > 0) {
+          Result.style.backgroundColor = "white";
+          Result.style.color = "black";
+        }
+        if (hello > 10) {
+          Result.style.backgroundColor = "#47e83c";
+          Result.style.color = "white";
+        }
+        if (hello > 20) {
+          Result.style.backgroundColor = "#0c9302";
+          Result.style.color = "white";
+        }
+      };
+
+      const decr = () => {
+        let hello = Number(Result.innerText);
+        hello = hello - 1;
+        if (hello<-1) {
+            Result.style.backgroundColor = "#f2725e";
+        }
+        Result.innerText = hello;
+        
+        if (hello < -10) {
+          Result.style.backgroundColor = "#e83f25";
+          Result.style.color = "white";
+        }
+        if (hello < -20) {
+          Result.style.backgroundColor = "#a51504";
+          Result.style.color = "white";
+        }
+      };
+      const Reset=()=>{
+        Result.innerText=0
+        Result.style.backgroundColor='white'
+        Result.style.color='black'
+        
+      }
+      
+       decrBtn.addEventListener("click", decr);
+       resetBtn.addEventListener("click",Reset)
+
+    </script>
+  </body>
+</html>
