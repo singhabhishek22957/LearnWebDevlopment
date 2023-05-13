@@ -1,0 +1,1 @@
+`The manipulated string is: ${Upper}`
